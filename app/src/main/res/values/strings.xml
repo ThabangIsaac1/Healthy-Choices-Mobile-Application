@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Healthy Choices</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="fruits">Fruits</string>
+    <string name="grains">Grains</string>
+    <string name="apple">Apple</string>
+    <string name="an_apple_is_an_edible_fruit_produced_by_an_apple_tree_malus_domestica">An apple is an edible fruit produced by an apple tree (Malus domestica)</string>
+    <string name="this_is_a_sweet_apple">This is a sweet apple.</string>
+</resources>
