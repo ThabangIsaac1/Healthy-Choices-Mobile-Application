@@ -53,6 +53,16 @@ public class CustomAdapter  extends RecyclerView.Adapter<CustomAdapter.MyViewHol
                 Snackbar snackbar = Snackbar.make(view,fruitNames.get(position).toString() + " Selected",Snackbar.LENGTH_LONG);
                 snackbar.show();
 
+                final Intent intent;
+                if (fruitNames.get(position).toString() == "Apples"){
+                    intent =  new Intent(context, Details.class);
+                } else if (fruitNames.get(position).toString() == "Apples"){
+                    intent =  new Intent(context, Details.class);
+                } else {
+                    intent =  new Intent(context, Details.class);
+                }
+                context.startActivity(intent);
+
 
             }
 
