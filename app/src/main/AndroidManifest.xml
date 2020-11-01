@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthyChoices">
-        <activity android:name=".list"></activity>
+        <activity android:name=".Details"></activity>
+        <activity android:name=".list" />
         <activity android:name=".fruitsrecyler" />
         <activity android:name=".choices" />
         <activity android:name=".MainActivity">

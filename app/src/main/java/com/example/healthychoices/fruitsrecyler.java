@@ -24,7 +24,7 @@ public class fruitsrecyler extends AppCompatActivity {
         GridLayoutManager gridLayoutManager = new GridLayoutManager(getApplicationContext(),2);
         recyclerView.setLayoutManager(gridLayoutManager);
         // call the constructor of CustomAdapter to send the reference and data to Adapter
-        CustomAdapter customAdapter = new CustomAdapter(fruitsrecyler.this, fruitNames,fruitImages,fruitDescription);
+        CustomAdapter customAdapter = new CustomAdapter(fruitsrecyler.this, fruitNames,fruitDescription,fruitImages);
         recyclerView.setAdapter(customAdapter);
 
     }

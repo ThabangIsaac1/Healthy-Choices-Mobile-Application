@@ -17,7 +17,6 @@ public class choices extends AppCompatActivity {
     private RadioButton radioVegetable;
     private RadioButton radioGrains;
     private RadioButton selection;
-    private RadioButton test;
     ImageButton select;
 
 
@@ -34,19 +33,29 @@ public class choices extends AppCompatActivity {
 
 
 
-        select.setOnClickListener(new View.OnClickListener() {
+        radiofruits.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
-            public void onClick(View v) {
-                Selected();
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                RadioButton rb = (RadioButton) group.findViewById(checkedId);
+                if ((null == rb) || (checkedId <= -1)) {
+                    return;
+                }
+
+
+
+
+                Toast.makeText(choices.this, rb.getText(), Toast.LENGTH_SHORT).show();
+
+
             }
         });
 
     }
-    public void Selected(){
-
+    public void onSubmit(View v) {
+        RadioButton rb = (RadioButton) radiofruits.findViewById(radiofruits.getCheckedRadioButtonId());
         Intent intent = new Intent(this, fruitsrecyler.class);
         startActivity(intent);
-
     }
+
 
 }
