@@ -59,7 +59,7 @@ public class CustomAdapter  extends RecyclerView.Adapter<CustomAdapter.MyViewHol
                 } else if (fruitNames.get(position).toString() == "Apples"){
                     intent =  new Intent(context, Details.class);
                 } else {
-                    intent =  new Intent(context, Details.class);
+                    intent =  new Intent(context, fruitsrecyler.class);
                 }
                 context.startActivity(intent);
 

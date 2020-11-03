@@ -53,7 +53,19 @@ public class choices extends AppCompatActivity {
     }
     public void onSubmit(View v) {
         RadioButton rb = (RadioButton) radiofruits.findViewById(radiofruits.getCheckedRadioButtonId());
-        Intent intent = new Intent(this, fruitsrecyler.class);
+        String text = (String) rb.getText().toString();
+        final Intent intent;
+        System.out.println(text);
+        if(rb.getText().equals("Fruits")){
+
+            intent =  new Intent(this,fruitsrecyler.class);
+
+        }else {
+
+            intent =  new Intent(this, choices.class);
+
+        }
+
         startActivity(intent);
     }
 
